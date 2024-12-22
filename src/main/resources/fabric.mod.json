@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mcmurder",
+	"version": "${version}",
+	"name": "Minecraft Murder",
+	"description": "This mod adds a knife and a gun along with a custom GameRule to help out with mini-games such as Minecraft Murder (as seen on YouTube sometimes)",
+	"authors": [
+		"Gl1tcherBro"
+	],
+	"contact": {
+		"homepage": "https://github.com/Gl1tcherBro/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mcmurder/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"gl1tch.mcmurder.MinecraftMurder"
+		],
+		"client": [
+			"gl1tch.mcmurder.MinecraftMurderClient"
+		],
+		"fabric-datagen": [
+			"gl1tch.mcmurder.MinecraftMurderDataGenerator"
+		]
+	},
+	"mixins": [
+		"mcmurder.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": ">=1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
